@@ -1,8 +1,24 @@
 
-const heading = React.createElement("h1", {id: "heading"}, "Hello World from React!");// Creates JS Object
+/**
+ * <div id="parent">
+ *  <div id="child1">
+ *      <h1>I'm an h1 tag</h1>
+ *      <h12>I'm an h2 tag</h2>
+ *  </div>
+ *  <div id="child2">
+ *      <h1>I'm an h1 tag</h1>
+ *      <h12>I'm an h2 tag</h2>
+ *  </div>
+ * </div>
+ */
 
-console.log(heading);
-
+const parent = React.createElement("div", {id:"parent"},
+    [React.createElement("div","child1",
+        [React.createElement("h1",{},"I'm and h1 tag"),React.createElement("h2",{},"I'm and h2 tag")]
+    ),
+    React.createElement("div","child2",
+        [React.createElement("h1",{},"I'm and h1 tag"),React.createElement("h2",{},"I'm and h2 tag")]
+    )]
+)
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(heading);
+root.render(parent);
