@@ -1,0 +1,36 @@
+
+const nestedHeaderElement = React.createElement('div', { class: 'title' }, [
+	React.createElement('h1', {}, 'Namste React!'),
+	React.createElement('h1', {}, 'Namste Node!'),
+	React.createElement('h1', {}, 'Namste Angular!'),
+]);
+
+const Author = () => <h2 className="heading">Swathi Polapally</h2>;
+
+const JsxHeaderElement = () => (
+	<div>
+		<h1>Namaste Node!</h1>
+		<h1>Namaste Angular!</h1>
+		<h1>Namaste React!</h1>
+		<Author />
+	</div>
+);
+
+const HeaderComponent = () => (
+	<div className="header">
+		<img
+			className="logo"
+			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5bb2TJsvG3CMlqq5QQlRincoQVnDz4F1DJA&s"
+			alt="Logo"
+		/>
+		<input type="text" placeholder="Search" />
+		<img
+			className="user-icon"
+			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZmADCanENXbPEIU8BSSP8tofT9ydhrTCBaw&s"
+			alt="User icon"
+		/>
+	</div>
+);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<HeaderComponent />);

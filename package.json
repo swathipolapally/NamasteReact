@@ -1,0 +1,34 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is React App by Swathi Polapally",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swathipolapally/NamasteReact.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Swathi Polapally",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swathipolapally/NamasteReact/issues"
+  },
+  "homepage": "https://github.com/swathipolapally/NamasteReact#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserslist": [
+    "last 2 version"
+  ]
+}
